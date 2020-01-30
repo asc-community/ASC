@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="595ec329-7d7c-42be-802b-618270bcc795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ascsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ascsite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="595ec329-7d7c-42be-802b-618270bcc795" name="Default Changelist" comment="updated website css, added page stubs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ascsite/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ascsite/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ascsite/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ascsite/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.db" beforeDir="false" afterPath="$PROJECT_DIR$/project.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +84,24 @@
       <updated>1580312566826</updated>
       <workItem from="1580326954677" duration="575000" />
       <workItem from="1580327566310" duration="2794000" />
-      <workItem from="1580330889873" duration="7285000" />
+      <workItem from="1580330889873" duration="8034000" />
     </task>
+    <task id="LOCAL-00001" summary="updated website css, added page stubs">
+      <created>1580368900925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580368900925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated website css, added page stubs" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated website css, added page stubs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580328036644">
@@ -106,6 +112,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="135" key="#manage/0.0.1920.1040@0.0.1920.1040" timestamp="1580361975014" />
+    <state x="546" y="115" key="CommitChangelistDialog2" timestamp="1580368917312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="546" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580368917312" />
     <state x="772" y="312" key="FileChooserDialogImpl" timestamp="1580327908729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -130,10 +140,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580361368046" />
-    <state x="628" y="308" key="Vcs.Push.Dialog.v2" timestamp="1580368807580">
+    <state x="628" y="308" key="Vcs.Push.Dialog.v2" timestamp="1580368924656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="628" y="308" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580368807580" />
+    <state x="628" y="308" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580368924656" />
     <state x="655" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580327061174">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
