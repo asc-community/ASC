@@ -5,6 +5,8 @@
         <title>{% block title %}{% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
+        <link rel="shortcut icon" type="image/png" href="/static/sitelogo.png"/>
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
@@ -19,27 +21,23 @@
     </head>
     <body>
         {% cms_toolbar %}
-        <div class="container">
+        <header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <ul class="navbar-nav flex-grow-1">
-
-                    {% for child in menu_tags.children %}
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
-                            {% if child.children %}
-                                <ul class="sub_menu">
-                                    {% show_menu from_level to_level extra_inactive extra_active template '' '' child %}
-                                </ul>
-                            {% endif %}
-                        </li>
-
-                    {% endfor %}
-
-                </ul>
+                <div class="container">
+                    <ul class="navbar-nav flex-grow-1">
+                        {% show_menu 0 100 100 100 "navigation.html" %}
+                    </ul>
+                </div>
             </nav>
-            {% block content %}{% endblock content %}
+        </header>
+        <div class="container">
+            <main class="pb-3" role="main">
+                {% block content %}{% endblock content %}
+            </main>
         </div>
+        <footer class="border-top footer text-muted">
+            <div class="container">© 2019-2020 - ascsite</div>
+        </footer>
         {% render_block "js" %}
     </body>
 </html>
