@@ -3,5 +3,5 @@ mono: none
 python:
   - "3.6"
 script:
- - cd ../CI
+ - cd ./CI
  - python deploy-script.py
