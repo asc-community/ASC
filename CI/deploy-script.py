@@ -1,5 +1,5 @@
 import socket
-from .config import SETTINGS
+from config import SETTINGS
 
 print("Deploy script here")
 
