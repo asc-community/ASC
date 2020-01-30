@@ -25,7 +25,7 @@ def console_log(*text):
 def kill():
     import os
     if os.path.exists(settings.CURRPID_ADDRESS):
-        f = open("../" + settings.CURRPID_ADDRESS, "rt")
+        f = open(settings.CURRPID_ADDRESS, "rt")
         pid = int(f.read())
         f.close()
         os.system("taskkill /pid " + str(pid) + " /f")
