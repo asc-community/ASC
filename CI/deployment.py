@@ -67,7 +67,8 @@ while True:
             # Run project
             console_log("Executing...")
             # subprocess.Popen(EXECUTABLE_PATH)
-            os.system('python "' + settings.MANAGE_PATH + '" runserver 0.0.0.0:64321')
+            os.system('python "' + settings.MANAGE_PATH + '" runsslserver 0.0.0.0:64321 --certificate "' +
+                      settings.CERTIFICATE_PATH + '" --key "' + settings.CERTIFICATE_PASSWORD_PATH + '"')
             break
     except Exception as e_:
         console_log("Error:", e_)
