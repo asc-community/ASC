@@ -28,7 +28,9 @@ SECRET_KEY = 'j+ss29bn#vu7x+54f6u&17#^6c@kqs%mtt#zwg9fg1)clgoge9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "asc-community.org"
+]
 
 
 # Application definition
