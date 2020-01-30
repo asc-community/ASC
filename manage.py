@@ -17,5 +17,16 @@ def main():
     execute_from_command_line(sys.argv)
 
 
+def save_pid():
+    import os
+    from .CI.config import SETTINGS
+    settings = SETTINGS()
+    curr_process = os.getpid()
+    f = open(settings.CURRPID_ADDRESS, "wt")
+    f.write(str(curr_process))
+    f.close()
+
+
 if __name__ == '__main__':
+    save_pid()
     main()

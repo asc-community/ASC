@@ -1,0 +1,7 @@
+language: python
+mono: none
+python:
+  - "3.6"
+script:
+ - cd ../CI
+ - python deploy-script.py
