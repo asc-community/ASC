@@ -29,7 +29,8 @@ SECRET_KEY = 'j+ss29bn#vu7x+54f6u&17#^6c@kqs%mtt#zwg9fg1)clgoge9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "asc-community.org"
+    "asc-community.org",
+    "www.asc-community.org",
 ]
 
 
@@ -182,7 +183,7 @@ INSTALLED_APPS = [
     'djangocms_googlemap',
     'djangocms_video',
     'ascsite',
-    'sslserver'
+    'sslserver',
 ]
 
 LANGUAGES = (
@@ -237,3 +238,5 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+SECURE_SSL_REDIRECT = True

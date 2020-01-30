@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="595ec329-7d7c-42be-802b-618270bcc795" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CI/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/CI/config.py" afterDir="false" />
+    <list default="true" id="595ec329-7d7c-42be-802b-618270bcc795" name="Default Changelist" comment="CI added &amp; testing...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ascsite/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +16,7 @@
         <counts>
           <entry key="css" value="1254" />
           <entry key="html" value="236" />
-          <entry key="py" value="878" />
+          <entry key="py" value="920" />
           <entry key="txt" value="43" />
           <entry key="yml" value="38" />
         </counts>
@@ -25,7 +26,7 @@
           <entry key="CSS" value="1254" />
           <entry key="HTML" value="236" />
           <entry key="PLAIN_TEXT" value="43" />
-          <entry key="Python" value="878" />
+          <entry key="Python" value="920" />
           <entry key="YAML" value="38" />
         </counts>
       </usages-collector>
@@ -64,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ascsite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1310">
-              <caret line="221" column="16" lean-forward="true" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+            <state relative-caret-position="540">
+              <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
             </state>
           </provider>
         </entry>
@@ -115,17 +116,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CI/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CI/deployment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="474">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1580401176246" expanded="true" signature="475:679" ph="..." />
@@ -166,6 +167,7 @@
     <findStrings>
       <find>https://asc-community.org</find>
       <find>ALLOW</find>
+      <find>SECURE_SSL_REDIRECT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,9 +183,9 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/CI/deploy-script.py" />
         <option value="$PROJECT_DIR$/manage.py" />
-        <option value="$PROJECT_DIR$/ascsite/settings.py" />
         <option value="$PROJECT_DIR$/CI/config.py" />
         <option value="$PROJECT_DIR$/CI/deployment.py" />
+        <option value="$PROJECT_DIR$/ascsite/settings.py" />
       </list>
     </option>
   </component>
@@ -200,6 +202,11 @@
           <expand>
             <path>
               <item name="ascsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ascsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ascsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ascsite" type="462c0819:PsiDirectoryNode" />
               <item name="ascsite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -402,7 +409,28 @@
       <option name="project" value="LOCAL" />
       <updated>1580400940436</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="CI added &amp; testing...">
+      <created>1580401250817</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1580401250817</updated>
+    </task>
+    <task id="LOCAL-00015" summary="CI added &amp; testing...">
+      <created>1580401292194</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1580401292195</updated>
+    </task>
+    <task id="LOCAL-00016" summary="CI added &amp; testing...">
+      <created>1580401463391</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1580401463391</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -609,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ascsite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1310">
-          <caret line="221" column="16" lean-forward="true" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CI/deploy-script.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -626,21 +647,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CI/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CI/deployment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="474">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1580401176246" expanded="true" signature="475:679" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CI/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ascsite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
         </state>
       </provider>
     </entry>
