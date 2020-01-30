@@ -19,7 +19,7 @@ def main():
 
 def save_pid():
     import os
-    from .CI.config import SETTINGS
+    from CI.config import SETTINGS
     settings = SETTINGS()
     curr_process = os.getpid()
     f = open(settings.CURRPID_ADDRESS, "wt")
