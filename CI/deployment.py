@@ -67,7 +67,7 @@ while True:
             # Run project
             console_log("Executing...")
             # subprocess.Popen(EXECUTABLE_PATH)
-            os.system('python "' + settings.MANAGE_PATH + '" runserver 0.0.0.0:80')
+            os.system('python "' + settings.MANAGE_PATH + '" runserver 0.0.0.0:64321')
             break
     except Exception as e_:
         console_log("Error:", e_)
