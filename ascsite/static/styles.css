@@ -137,8 +137,12 @@ a:hover {
 .pad-nav-menu-item {
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-right: 8px;
-    padding-left: 8px;
+}
+
+.navbar-nav.flex-grow-1 li
+{
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .nav-link {
@@ -175,3 +179,24 @@ hr {
     content: "";
     background-size: 100% 100%;
 }
+
+.project-name {
+    height: 222px;
+    width: 444px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-name a {
+    color: #f0f0f0;
+    font-size: 16pt;
+}
+
+#hi19
+{
+    background: black;
+}
+
