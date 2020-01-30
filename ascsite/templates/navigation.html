@@ -1,11 +1,13 @@
 {% load menu_tags %}
 
+<!-- TODO: fix ASC & buttons -->
 {% for child in children %}
-<li class="nav-item">
     {% if child.get_absolute_url == "/ru/" %}
-        <a class="navbar-brand" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
+        <li class="nav-item">
+        <a class="dark-theme-text-color navbar-brand pad-nav-menu-item" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
     {% else %}
-	    <a class="nav-link text-dark" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
+        <li class="nav-item nav-page">
+	    <a class="dark-theme-text-color nav-link pad-nav-menu-item" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
     {% endif %}
     {% if child.children %}
 	    <ul>

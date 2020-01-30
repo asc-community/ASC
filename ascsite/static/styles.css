@@ -23,9 +23,6 @@ a.navbar-brand {
 }
 
 /* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
 
 .btn-primary {
   color: #fff;
@@ -80,6 +77,10 @@ body {
   margin-bottom: 60px;
 }
 
+.navbar {
+    background-color: #555560;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -90,4 +91,87 @@ body {
 
 .centered {
     text-align: center;
+}
+
+
+/*  THEME SETTINGS
+------------------------------------------------*/
+
+
+.dark-theme-text-color {
+    color: #f0f0f0;
+}
+
+.dark-theme-background-color {
+    background-color: #555560;
+}
+
+.dark-theme-text-darker-color {
+    color: #48484E;
+}
+
+.dark-theme-background-darker-color {
+    background: #48484E;
+}
+
+.dark-theme-link-color {
+    color: #FFAA00;
+}
+
+a {
+    color: #FFAA00;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underlined;
+    color: #FFAA00;
+}
+
+.navbar {
+    border-bottom: none !important;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .3);
+    padding: 0;
+}
+
+.pad-nav-menu-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.nav-link {
+    padding-top: 16px;
+}
+
+.nav-item a:hover {
+    color: #f0f0f0;
+}
+
+.nav-page:hover {
+    background-color: #48484E;
+}
+
+hr {
+    background-color: #48484E;
+}
+
+.footer {
+    border-top: 1px solid gray;
+}
+
+.navbar-nav .nav-link
+{
+    padding-left: 15px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("/media/filer_public/2c/8c/2c8c7972-6a05-4d44-8bbd-a495d41e0554/burger.png");
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background-size: 100% 100%;
 }
