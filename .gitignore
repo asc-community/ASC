@@ -1,3 +1,5 @@
-/project.db
-/ascsite/__pycache__
-/.idea
+*/__pycache__
+venv
+misc.xml
+tasks.xml
+workspace.xml

@@ -2,17 +2,12 @@
 
 <!-- TODO: fix ASC & buttons -->
 {% for child in children %}
-    {% if child.get_absolute_url == "/ru/" %}
-        <li class="nav-item">
-        <a class="dark-theme-text-color navbar-brand pad-nav-menu-item" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
-    {% else %}
-        <li class="nav-item nav-page">
-	    <a class="dark-theme-text-color nav-link pad-nav-menu-item" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
-    {% endif %}
+    <li class="nav-item nav-page">
+	<a class="dark-theme-text-color nav-link pad-nav-menu-item" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a>
     {% if child.children %}
 	    <ul>
 		    {% show_menu from_level to_level extra_inactive extra_active template "" "" child %}
-	    </ul>
+        </ul>
     {% endif %}
 </li>
 {% endfor %}
