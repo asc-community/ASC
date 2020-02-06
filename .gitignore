@@ -6,3 +6,5 @@ workspace.xml
 /project.db
 /ascsite/__pycache__
 /.idea
+/CI/deployment.py
+/media/*
