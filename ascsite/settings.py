@@ -31,6 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "asc-community.org",
     "www.asc-community.org",
+    "127.0.0.1"
 ]
 
 

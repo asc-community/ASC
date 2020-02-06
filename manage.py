@@ -22,9 +22,12 @@ def save_pid():
     from CI.config import SETTINGS
     settings = SETTINGS()
     curr_process = os.getpid()
-    f = open(settings.CURRPID_ADDRESS, "wt")
-    f.write(str(curr_process))
-    f.close()
+    try:
+        f = open(settings.CURRPID_ADDRESS, "wt")
+        f.write(str(curr_process))
+        f.close()
+    except:
+        print("file was not found: " + settings.CURRPID_ADDRESS)
 
 
 if __name__ == '__main__':
