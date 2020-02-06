@@ -3,3 +3,6 @@ venv
 misc.xml
 tasks.xml
 workspace.xml
+/project.db
+/ascsite/__pycache__
+/.idea
