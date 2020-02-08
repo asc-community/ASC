@@ -3,4 +3,7 @@ venv
 misc.xml
 tasks.xml
 workspace.xml
-project.db
+/project.db
+/.idea
+/CI/deployment.py
+/media/*
