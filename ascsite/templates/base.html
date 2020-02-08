@@ -7,6 +7,15 @@
 
         <link rel="shortcut icon" type="image/png" href="/static/sitelogo.png"/>
 
+        <!-- Https redirect -->
+        <head>
+        <script type="text/javascript">
+        if(window.location.protocol != 'https:') {
+          location.href = location.href.replace("http://", "https://");
+        }
+        </script>
+        </head>
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
