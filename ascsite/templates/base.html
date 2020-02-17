@@ -6,13 +6,16 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <link rel="shortcut icon" type="image/png" href="/static/sitelogo.png"/>
-
         <!-- Https redirect -->
         <script type="text/javascript">
-        if(window.location.protocol != 'https:') {
+        if(window.location.protocol != 'https:' && !window.location.href.includes("http://127.0.0.1")) {
           location.href = location.href.replace("http://", "https://").replace("www.", "");
         }
         </script>
+
+        <!-- MathJax -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -61,5 +64,4 @@
         </footer>
         {% render_block "js" %}
     </body>
-<div class="test-ci-quack"></div>
 </html>

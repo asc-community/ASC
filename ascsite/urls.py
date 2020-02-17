@@ -18,6 +18,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
+    url(r'^', include('article.urls')),
     url(r'^admin/', admin.site.urls),  # NOQA
     url(r'^', include('cms.urls')),
 )
@@ -28,3 +29,4 @@ if settings.DEBUG:
         url(r'^media/(?P<path>.*)$', serve,
             {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
         ] + staticfiles_urlpatterns() + urlpatterns
+
