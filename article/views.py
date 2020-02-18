@@ -36,8 +36,9 @@ def article_view(request, article_id, article_slug):
 
 
 def article_list_view(request):
-    # TODO
-    posts = Article.objects.all()
+    # TODO add paging
+    # filter all published posts
+    posts = Article.objects.filter(status="published")
     post_views = [PostArticleView(post) for post in posts]
     context = {
         "articles": post_views
