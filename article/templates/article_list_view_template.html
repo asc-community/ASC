@@ -6,7 +6,7 @@
 {% block content %}
     {% for article in articles %}
         <h3>{{ article.title }}</h3>
-        <p>{{ article.brief }}</p>
+        <p>{{ article.brief|safe }}</p>
         <a href="{{ article.link }}">Read more -></a>
         <hr>
     {% endfor %}
