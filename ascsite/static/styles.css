@@ -205,3 +205,18 @@ hr {
     background: black;
 }
 
+.asc-button {
+    border-color: #FFAA00;
+    border-radius: 3px;
+    padding: 6px 10px;
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+}
+
+.asc-button:hover {
+    background-color: #FFAA00;
+    color: #555560;
+    text-decoration: none;
+
+}

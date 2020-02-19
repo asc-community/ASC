@@ -13,7 +13,7 @@ class Article(models.Model):
     content = models.TextField()
     seo_title = models.CharField(max_length=80)
     seo_description = models.CharField(max_length=80)
-    author = models.ForeignKey(User, related_name="articles", on_delete=models.CASCADE)
+    authors = models.ManyToManyField(User, related_name="articles")
     date_published = models.DateTimeField(default=timezone.now)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
