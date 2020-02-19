@@ -6,7 +6,9 @@
 {% block content %}
     <h1>{{ title }}</h1>
 	{{ content|safe }}
+    <p>Authors of the research: {{ author_list }}</p>
+    <br>
     {% if edit_link %}
-        <a href="{{ edit_link|safe }}">Edit</a>
+        <a class="asc-button" href="{{ edit_link|safe }}">Edit</a>
     {% endif %}
 {% endblock content %}
