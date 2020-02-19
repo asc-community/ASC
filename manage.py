@@ -27,7 +27,7 @@ def save_pid():
         f.write(str(curr_process))
         f.close()
     except:
-        print("file was not found: " + settings.CURRPID_ADDRESS)
+        print("Warning: file was not found: " + settings.CURRPID_ADDRESS)
 
 
 if __name__ == '__main__':
