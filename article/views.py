@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Article
 from django.http import Http404
-
+from .processors import PostProcessor
 
 class AuthorView:
     def __init__(self, author):
@@ -36,7 +36,7 @@ def article_view(request, article_id, article_slug):
         raise Http404("404")
     context = {
         "title": article.title,
-        "content": article.content,
+        "content": PostProcessor.process(article.content),
         "authors": [AuthorView(i) for i in article.authors.all()]
     }
     context["author_list"] = ", ".join([author.name for author in context["authors"]])
